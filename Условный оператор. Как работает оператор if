@@ -1,0 +1,31 @@
+x = 38
+
+print('Hello')
+if x < 0:
+    print('less than 0')
+print("Goodbye")
+
+a, b, c = 3, 4, 5
+# x = 38
+if a < b:
+    print('success')
+if (a < b) and (c > a):
+    print("success")
+if c < x and (a > 2 and b == 4) and (a > 1000 or b < 1000 or x > c):
+    print('success')
+if c > a or x == 0:
+    print('success')
+
+# Сравнение строк
+if '34' > '33':
+    print('success')
+if "345" > "12":
+    print("success")
+if '23' < "321":
+    print("success")
+
+# НЕльзя сравнивать с разными типами данных
+if [5, 4] > '3442':
+    print('success')
+if '8' > 5:
+    print('success')
