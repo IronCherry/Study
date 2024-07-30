@@ -1,7 +1,7 @@
 def single_root_words(*other_words, root_words='ich'):
     same_wodrs = []
     for i in other_words:
-        if root_words in i.lower():
+        if root_words.lower().count(i.lower()) or i.lower().count(root_words.lower()):
             same_wodrs.append(i)
     return same_wodrs
 
